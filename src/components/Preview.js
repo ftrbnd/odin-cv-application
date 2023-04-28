@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Experience extends Component {
+class Preview extends Component {
     constructor(props) {
         super(props);
     }
@@ -14,4 +14,4 @@ class Experience extends Component {
     }
 }
 
-export default Experience;
+export default Preview;
