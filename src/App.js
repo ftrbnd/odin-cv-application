@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import General from "./components/General";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
-import Preview from "./components/Preview";
 
 class App extends Component {
   constructor() {
@@ -20,15 +19,14 @@ class App extends Component {
     };
   }
 
-  render() {
-    const { user } = this.state;
 
+  render() {
     return (
       <div>
-        <General user={user} />
+        <h1>CV Application</h1>
+        <General />
         <Education />
         <Experience />
-        <Preview />
       </div>
     );
   }
