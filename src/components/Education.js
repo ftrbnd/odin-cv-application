@@ -13,7 +13,7 @@ class Education extends Component {
             degree: '',
             major: '',
             isReadOnly: true
-        }
+        };
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.buttonClick = this.buttonClick.bind(this);
@@ -59,7 +59,7 @@ class Education extends Component {
     buttonClick() {
         this.setState({
             isReadOnly: !this.state.isReadOnly
-        })
+        });
     }
 
     render() {

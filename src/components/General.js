@@ -10,7 +10,7 @@ class General extends Component {
             email: '',
             phone: '',
             isReadOnly: true
-        }
+        };
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.buttonClick = this.buttonClick.bind(this);
@@ -46,7 +46,7 @@ class General extends Component {
     buttonClick() {
         this.setState({
             isReadOnly: !this.state.isReadOnly
-        })
+        });
     }
     
     render() {
