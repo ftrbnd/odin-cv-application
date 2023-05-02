@@ -55,10 +55,10 @@ class General extends Component {
         return (
             <div className="generalInfo">
                 <h2>General Information</h2>
-                <InputField value={name} readOnly={isReadOnly} fieldName="Name" display="view" handleInputChange={this.handleInputChange} />
-                <InputField value={github} readOnly={isReadOnly} fieldName="GitHub" display="view" handleInputChange={this.handleInputChange} />
-                <InputField value={email} readOnly={isReadOnly} fieldName="Email" display="view" handleInputChange={this.handleInputChange} />
-                <InputField value={phone} readOnly={isReadOnly} fieldName="Phone" display="view" handleInputChange={this.handleInputChange} />
+                <InputField value={name} readOnly={isReadOnly} fieldName="Name" handleInputChange={this.handleInputChange} />
+                <InputField value={github} readOnly={isReadOnly} fieldName="GitHub" handleInputChange={this.handleInputChange} />
+                <InputField value={email} readOnly={isReadOnly} fieldName="Email" handleInputChange={this.handleInputChange} />
+                <InputField value={phone} readOnly={isReadOnly} fieldName="Phone" handleInputChange={this.handleInputChange} />
                 <button
                     onClick={this.buttonClick}
                     type="submit"
