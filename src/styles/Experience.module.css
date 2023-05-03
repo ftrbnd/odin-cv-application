@@ -1,0 +1,33 @@
+h2 {
+    grid-column: 1 / -2;
+}
+
+button {
+    justify-self: center;
+    align-self: center;
+    grid-column: -2;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 16px;
+
+    justify-items: start;
+}
+
+.title {
+    grid-row: 1;
+    grid-column: 1 / -1;
+}
+
+.tools {
+    grid-row: 2;
+    grid-column: 1 / -1;
+}
+
+.tasks {
+    grid-row: 3;
+    grid-column: 1 / -1;
+}
