@@ -20,11 +20,3 @@ body {
 
   font-family: Roboto, Helvetica, sans-serif;
 }
-
-label {
-  font-weight: bold;
-}
-
-input {
-  padding: 4px;
-}

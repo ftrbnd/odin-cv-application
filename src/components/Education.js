@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import InputField from "./InputField";
+import EducationCSS from "../styles/Education.module.css";
 
 class Education extends Component {
     constructor() {
@@ -66,20 +67,20 @@ class Education extends Component {
         const { school, city, startYear, endYear, degree, major, isReadOnly } = this.state;
 
         return (
-            <div className="educationInfo">
+            <div className={EducationCSS.container}>
                 <h2>Education</h2>
-                <InputField value={school} readOnly={isReadOnly} fieldName="School" handleInputChange={this.handleInputChange} />
-                <InputField value={city} readOnly={isReadOnly} fieldName="City" handleInputChange={this.handleInputChange} />
-                <InputField value={startYear} readOnly={isReadOnly} fieldName="Start" handleInputChange={this.handleInputChange} />
-                <InputField value={endYear} readOnly={isReadOnly} fieldName="End" handleInputChange={this.handleInputChange} />
-                <InputField value={degree} readOnly={isReadOnly} fieldName="Degree" handleInputChange={this.handleInputChange} />
-                <InputField value={major} readOnly={isReadOnly} fieldName="Major" handleInputChange={this.handleInputChange} />
                 <button
                     onClick={this.buttonClick}
                     type="submit"
                 >
                     {isReadOnly ? 'Edit' : 'Done'}
                 </button>
+                <InputField class={EducationCSS.school} value={school} readOnly={isReadOnly} fieldName="School" handleInputChange={this.handleInputChange} />
+                <InputField class={EducationCSS.start} value={startYear} readOnly={isReadOnly} fieldName="Start" handleInputChange={this.handleInputChange} />
+                <InputField class={EducationCSS.end} value={endYear} readOnly={isReadOnly} fieldName="End" handleInputChange={this.handleInputChange} />
+                <InputField class={EducationCSS.degree} value={degree} readOnly={isReadOnly} fieldName="Degree" handleInputChange={this.handleInputChange} />
+                <InputField class={EducationCSS.major} value={major} readOnly={isReadOnly} fieldName="Major" handleInputChange={this.handleInputChange} />
+                <InputField class={EducationCSS.city} value={city} readOnly={isReadOnly} fieldName="City" handleInputChange={this.handleInputChange} />
             </div>
         );
     }

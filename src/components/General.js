@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import InputField from "./InputField";
+import GeneralCSS from "../styles/General.module.css";
 
 class General extends Component {
     constructor() {
@@ -53,18 +54,18 @@ class General extends Component {
         const { name, github, email, phone, isReadOnly } = this.state;
 
         return (
-            <div className="generalInfo">
+            <div className={GeneralCSS.container}>
                 <h2>General Information</h2>
-                <InputField value={name} readOnly={isReadOnly} fieldName="Name" handleInputChange={this.handleInputChange} />
-                <InputField value={github} readOnly={isReadOnly} fieldName="GitHub" handleInputChange={this.handleInputChange} />
-                <InputField value={email} readOnly={isReadOnly} fieldName="Email" handleInputChange={this.handleInputChange} />
-                <InputField value={phone} readOnly={isReadOnly} fieldName="Phone" handleInputChange={this.handleInputChange} />
                 <button
                     onClick={this.buttonClick}
                     type="submit"
                 >
                     {isReadOnly ? 'Edit' : 'Done'}
                 </button>
+                <InputField class={GeneralCSS.name} value={name} readOnly={isReadOnly} fieldName="Name" handleInputChange={this.handleInputChange} />
+                <InputField class={GeneralCSS.github} id="github" value={github} readOnly={isReadOnly} fieldName="GitHub" handleInputChange={this.handleInputChange} />
+                <InputField class={GeneralCSS.email} id="email" value={email} readOnly={isReadOnly} fieldName="Email" handleInputChange={this.handleInputChange} />
+                <InputField class={GeneralCSS.phone} id="phone" value={phone} readOnly={isReadOnly} fieldName="Phone" handleInputChange={this.handleInputChange} />
             </div>
         );
     }

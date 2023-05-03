@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 16px;
+}
+
+h2 {
+    grid-column: 1 / -2;
+}
+
+button {
+    justify-self: center;
+    align-self: center;
+}
+
+.school {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.start {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.end {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.degree {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.major {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.city {
+    grid-row: 3;
+    grid-column: 3;
+}

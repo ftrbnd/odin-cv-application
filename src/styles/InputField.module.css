@@ -1,0 +1,19 @@
+.inputField {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    gap: 16px;
+
+    padding: 16px;
+}
+
+label {
+    font-weight: bold;
+    text-align: center;
+}
+
+p, input {
+    padding: 4px;
+    margin: 0;
+}
