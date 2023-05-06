@@ -91,9 +91,9 @@ export default function Experience() {
             {
                 allExperience.map((exp) => {
                     return <div key={exp.id} className="allExperience">
-                        <InputField class={ExperienceCSS.title} value={exp.title} readOnly={isReadOnly} fieldName="Title" handleInputChange={handleTitleInput} />
-                        <InputField class={ExperienceCSS.tools} value={exp.tools} readOnly={isReadOnly} fieldName="Tools" handleInputChange={handleToolsInput} />
-                        <InputField class={ExperienceCSS.tasks} value={exp.tasks} readOnly={isReadOnly} fieldName="Tasks" handleInputChange={handleTasksInput} />
+                        <InputField cssClass={ExperienceCSS.title} value={exp.title} readOnly={isReadOnly} fieldName="Title" handleInputChange={handleTitleInput} />
+                        <InputField cssClass={ExperienceCSS.tools} value={exp.tools} readOnly={isReadOnly} fieldName="Tools" handleInputChange={handleToolsInput} />
+                        <InputField cssClass={ExperienceCSS.tasks} value={exp.tasks} readOnly={isReadOnly} fieldName="Tasks" handleInputChange={handleTasksInput} />
                     </div>
                 })
             }
